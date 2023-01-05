@@ -1,0 +1,9 @@
+version: "3"
+services:
+  explorer:
+    build:
+      context: .
+      args:
+        - rpc_url=${RPC_URL}
+    ports:
+     - "4000:80"
